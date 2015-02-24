@@ -7,7 +7,6 @@ function Run() {
   	.Add('TestNotEqual')
     .Add('TestOK')
     .Add('TestNotOK')
-
     ;
 
 	trace('Expect to see FAILs here, they\'re testing expected failures!');
