@@ -28,8 +28,8 @@ in your Run function). Test functions look like this:
 ```javascript
 TestSomething(assert, plugin)
 
-   result = plugin.DoSomething(1,2,3)
-   assert.Equal(result, 99, "Correct result from DoSomething")
+   result = plugin.DoSomething(1,2,3);
+   assert.Equal(result, 99, "Correct result from DoSomething");
 
 ```
 
@@ -48,6 +48,9 @@ Currently supports the following:
   testAssert.NotOK(False, 'equal');
 ```
 
+## Building sib-test
+You really should take a look at [plgToMSS](https://github.com/tido/plgToMSS). The src and test
+directories in this repo are set up for this tool.
 
 
 
