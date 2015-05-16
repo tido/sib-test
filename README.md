@@ -34,7 +34,7 @@ TestSomething(assert, plugin)
 ```
 
 The assert methods return true/false depending on whether the assertion passes or not. In addition
-the object remebers assertion failures (which it reports back to the test suite) and on failure
+the object remembers assertion failures (which it reports back to the test suite) and on failure
 writes to the trace window (which will be opened by the test plugin if it isn't already open, so you
 might want to open it manually and resize it).
 
@@ -42,11 +42,12 @@ might want to open it manually and resize it).
 Currently supports the following:
 
 ```javascript
-  testAssert.Equal(10, 10, 'equal');
-  testAssert.NotEqual(10, 10, 'equal');
-  testAssert.OK(True, 'equal');
-  testAssert.NotOK(False, 'equal');
+  testAssert.Equal(10, 10, 'output if the two arguments are *not* equal');
+  testAssert.NotEqual(10, 10, 'output if the two arguments *are* equal');
+  testAssert.OK(True, 'this is output if the actual value is not True');
+  testAssert.NotOK(False, 'and this if the actual value is not False');
 ```
+
 
 ## Building sib-test
 You really should take a look at [plgToMSS](https://github.com/tido/plgToMSS). The src and test
