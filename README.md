@@ -1,7 +1,7 @@
 # sib-test
 Unit test and assertion framework for Sibelius ManuScript development
 
-As part of my cunning plan to drag Sibelius plugin development kikking and
+As part of my cunning plan to drag Sibelius plugin development kicking and
 screaming into the 21st Century, here's a unit test and assertions framework
 implemented as a plugin. Take a look at TestTest.plg for an example of its
 use (it's the set of unit tests for the assertions code).
